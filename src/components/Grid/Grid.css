@@ -1,0 +1,68 @@
+.grid-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .turn-highlight {
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 1rem 0;
+  }
+  
+  .history {
+    color: white;
+    margin-top: 1rem;
+  }
+  
+  .reset {
+    background-color: rgba(212, 179, 243, 0.912);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: black;
+  }
+  
+  .reset:hover {
+    background-color: rgb(177, 105, 244);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+    }
+  
+    .card {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .turn-highlight, .scoreboard, .history {
+      font-size: 14px;
+    }
+  
+    .reset {
+      padding: 0.3rem 0.5rem;
+    }
+  }
+  
